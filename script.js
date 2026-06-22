@@ -41,3 +41,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// 背景に苺をたくさん散らす
+function createStrawberries() {
+  const container = document.body;
+  const strawberryCount = 35; // 個数（調整可能）
+
+  for (let i = 0; i < strawberryCount; i++) {
+    const strawberry = document.createElement('img');
+    strawberry.src = `assets/strawberry1.png`;
+    strawberry.className = 'strawberry-bg';
+    strawberry.style.position = 'fixed';
+    strawberry.style.left = Math.random() * 100 + 'vw';
+    strawberry.style.top = Math.random() * 100 + 'vh';
+    strawberry.style.width = (25 + Math.random() * 45) + 'px';
+    strawberry.style.opacity = 0.08 + Math.random() * 0.12;
+    strawberry.style.zIndex = -1;
+    strawberry.style.pointerEvents = 'none';
+    strawberry.style.transform = `rotate(${Math.random() * 360}deg)`;
+    container.appendChild(strawberry);
+  }
+}
+
+// ページ読み込み時に実行
+document.addEventListener('DOMContentLoaded', createStrawberries);
