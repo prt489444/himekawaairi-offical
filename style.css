@@ -1,43 +1,55 @@
-/* style.css */
+/* style.css - 姫川あいり公式サイト */
+
 body {
   font-family: 'Helvetica Neue', system-ui, sans-serif;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
+/* ヒーロー背景 */
 .hero-bg {
-  background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 100%);
+  background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 50%, #fae8e8 100%);
 }
 
+/* タイトルグロー効果 */
 .fairy-glow {
-  text-shadow: 0 0 25px rgba(236, 72, 153, 0.6);
+  text-shadow: 0 0 25px rgba(236, 72, 153, 0.5);
 }
 
+/* ナビゲーション */
 nav {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #fce7f3;
 }
 
+/* セクション余白調整 */
 section {
   scroll-margin-top: 80px;
 }
 
-/* ふわふわしたボタンやホバー効果 */
+/* ふわふわボタン */
 .btn-pink {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .btn-pink:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3);
 }
-/* スマホメニュー（簡易版） */
+
+/* スマホメニュー */
 #mobile-menu {
   display: none;
 }
 
-#menu-button.active + #mobile-menu {
-  display: block;
+/* カード風デザイン */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
