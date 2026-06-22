@@ -115,10 +115,10 @@ section {
   bottom: 0;
   background-image: 
     url('assets/strawberry1.png'),
-    url('assets/strawberry2.png'),
-    url('assets/strawberry3.png'),
-    url('assets/strawberry4.png'),
-    url('assets/strawberry5.png');
+    url('assets/strawberry1.png'),
+    url('assets/strawberry1.png'),
+    url('assets/strawberry1.png'),
+    url('assets/strawberry1.png');
   background-position: 
     8% 15%, 
     75% 25%, 
