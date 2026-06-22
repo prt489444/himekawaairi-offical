@@ -1,9 +1,13 @@
 /* style.css - 姫川あいり公式サイト */
 
 body {
-  font-family: 'Helvetica Neue', system-ui, sans-serif;
+  font-family: 'Nunito', system-ui, sans-serif;
   scroll-behavior: smooth;
   line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Comic Neue', cursive;
 }
 
 /* ヒーロー背景 */
