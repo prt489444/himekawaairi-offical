@@ -100,3 +100,39 @@ section {
     #f3e8ff 50%, 
     #fae8e8 100%);
 }
+.hero-bg {
+  background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 50%, #fae8e8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    url('assets/strawberry1.png'),
+    url('assets/strawberry2.png'),
+    url('assets/strawberry3.png'),
+    url('assets/strawberry4.png'),
+    url('assets/strawberry5.png');
+  background-position: 
+    8% 15%, 
+    75% 25%, 
+    25% 65%, 
+    85% 75%, 
+    45% 40%;
+  background-repeat: no-repeat;
+  background-size: 
+    55px,
+    40px,
+    70px,
+    35px,
+    50px;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 1;
+}
