@@ -45,18 +45,35 @@
     </div>
   </div>
 </nav>  
-  <!-- ヒーロー -->
-  <section class="hero-bg min-h-screen flex items-center justify-center text-center px-6">
-    <div class="max-w-2xl">
+
+<!-- ヒーロー -->
+<section class="hero-bg min-h-screen flex items-center justify-center px-6 py-12">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- 左側：立ち絵 -->
+    <div class="flex justify-center">
+      <img src="assets/260325_背景透過.png" 
+           alt="姫川あいり" 
+           class="max-h-[85vh] w-auto drop-shadow-2xl">
+    </div>
+    
+    <!-- 右側：テキスト -->
+    <div class="text-center md:text-left">
       <div class="mb-8">
-        <div class="w-52 h-52 mx-auto bg-pink-200 rounded-full flex items-center justify-center text-7xl mb-6 border-8 border-white shadow-2xl">
-          ✨
+        <div class="inline-block bg-white/70 backdrop-blur-md px-6 py-2 rounded-full text-pink-500 text-sm font-medium mb-6">
+          電子の妖精
         </div>
       </div>
-      <h1 class="text-5xl md:text-6xl font-bold text-pink-500 fairy-glow mb-4">姫川あいり公式サイト</h1>
-      <p class="text-2xl md:text-3xl text-pink-400 font-light">あなたを癒す電子の妖精</p>
+      <h1 class="text-5xl md:text-6xl font-bold text-pink-500 fairy-glow mb-6">姫川あいり</h1>
+      <p class="text-2xl md:text-3xl text-pink-400 font-light mb-10">あなたを癒す電子の妖精</p>
+      
+      <a href="#contact" 
+         class="inline-block bg-pink-400 hover:bg-pink-500 text-white px-10 py-4 rounded-full text-lg font-medium transition-all shadow-lg">
+        お問い合わせはこちら
+      </a>
     </div>
-  </section>
+  </div>
+</section>
   
   <!-- プロフィール -->
   <section id="profile" class="py-24 bg-white">
