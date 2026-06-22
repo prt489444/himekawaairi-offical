@@ -41,26 +41,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-// 背景に苺をたくさん散らす
-function createStrawberries() {
+
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("苺背景スクリプト起動");
+
   const container = document.body;
-  const strawberryCount = 35; // 個数（調整可能）
+  const strawberryCount = 40; // 個数（20〜60くらいで調整）
 
   for (let i = 0; i < strawberryCount; i++) {
     const strawberry = document.createElement('img');
-    strawberry.src = `assets/strawberry1.png`;
-    strawberry.className = 'strawberry-bg';
+    strawberry.src = 'assets/strawberry1.png'; // 1つの画像
     strawberry.style.position = 'fixed';
     strawberry.style.left = Math.random() * 100 + 'vw';
     strawberry.style.top = Math.random() * 100 + 'vh';
-    strawberry.style.width = (25 + Math.random() * 45) + 'px';
-    strawberry.style.opacity = 0.08 + Math.random() * 0.12;
+    strawberry.style.width = (30 + Math.random() * 60) + 'px'; // 30〜90pxのランダムサイズ
+    strawberry.style.opacity = 0.06 + Math.random() * 0.12; // 透明度ランダム
     strawberry.style.zIndex = -1;
     strawberry.style.pointerEvents = 'none';
-    strawberry.style.transform = `rotate(${Math.random() * 360}deg)`;
+    strawberry.style.transform = `rotate(${Math.random() * 360}deg)`; // 回転もランダム
     container.appendChild(strawberry);
   }
-}
-
-// ページ読み込み時に実行
-document.addEventListener('DOMContentLoaded', createStrawberries);
+});
