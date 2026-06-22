@@ -53,3 +53,36 @@ section {
   transform: translateY(-4px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
+/* 背景をリッチに */
+.hero-bg {
+  background: linear-gradient(135deg, 
+    #fce7f3 0%, 
+    #f3e8ff 30%, 
+    #fae8e8 60%, 
+    #f0f9ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* かわいい背景装飾 */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(251, 191, 36, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* 他のセクションも少しリッチに */
+.bg-pink-50 {
+  background: #fdf4ff;
+}
+
+.bg-white {
+  background: #fffaf5;
+}
