@@ -11,22 +11,31 @@
 <body class="bg-white text-gray-800">
 
   <!-- ナビ -->
-<nav>
+<!-- 改良版ナビゲーション -->
+<nav class="bg-white/90 backdrop-blur-md border-b border-pink-100">
   <div class="max-w-5xl mx-auto px-6">
     <div class="flex justify-between items-center h-16">
-      <a href="#" class="text-xl font-bold text-pink-500 hover:text-pink-600 transition-colors">
+      
+      <!-- ロゴ（クリックでトップ） -->
+      <a href="#" class="text-2xl font-bold text-pink-500 hover:text-pink-600 transition-colors">
         姫川あいり
       </a>
-      
-      <div class="flex gap-6 md:gap-8 text-sm font-medium">
+
+      <!-- PC用メニュー -->
+      <div class="hidden md:flex gap-8 text-sm font-medium">
         <a href="#profile" class="hover:text-pink-500 transition-colors">プロフィール</a>
         <a href="#career" class="hover:text-pink-500 transition-colors">経歴</a>
         <a href="#sns" class="hover:text-pink-500 transition-colors">SNS</a>
         <a href="#contact" class="hover:text-pink-500 transition-colors">お問い合わせ</a>
       </div>
+
+      <!-- スマホ用ハンバーガーメニュー（今は簡易版） -->
+      <button id="menu-button" class="md:hidden text-3xl text-pink-400">
+        ☰
+      </button>
     </div>
   </div>
-</nav>
+</nav>  
   <!-- ヒーロー -->
   <section class="hero-bg min-h-screen flex items-center justify-center text-center px-6">
     <div class="max-w-2xl">
