@@ -1,0 +1,35 @@
+/* style.css */
+body {
+  font-family: 'Helvetica Neue', system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 100%);
+}
+
+.fairy-glow {
+  text-shadow: 0 0 25px rgba(236, 72, 153, 0.6);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ふわふわしたボタンやホバー効果 */
+.btn-pink {
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3);
+}
