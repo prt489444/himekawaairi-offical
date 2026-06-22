@@ -33,3 +33,11 @@ section {
   transform: translateY(-3px);
   box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3);
 }
+/* スマホメニュー（簡易版） */
+#mobile-menu {
+  display: none;
+}
+
+#menu-button.active + #mobile-menu {
+  display: block;
+}
