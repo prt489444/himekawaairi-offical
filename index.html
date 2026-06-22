@@ -1,106 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
-<script src="script.js"></script>
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>姫川あいり公式サイト - あなたを癒す電子の妖精</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-<style>
-  html {
-    scroll-behavior: smooth !important;
-  }
-  
-  section {
-    scroll-margin-top: 90px;
-  }
-</style>
+  <style>
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 80px; }
+    .hero-bg {
+      background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 50%, #fae8e8 100%);
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- ナビ -->
-<!-- 改良版ナビゲーション -->
-<nav class="bg-white/90 backdrop-blur-md border-b border-pink-100">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="flex justify-between items-center h-16">
-      
-      <!-- ロゴ（クリックでトップ） -->
-      <a href="#" class="text-2xl font-bold text-pink-500 hover:text-pink-600 transition-colors">
-        姫川あいり公式サイト
-      </a>
-
-<!-- PC用メニュー -->
-<div class="hidden md:flex gap-6 text-sm font-medium">
-  <a href="#profile" class="hover:text-pink-500 transition-colors">プロフィール</a>
-  <a href="#career" class="hover:text-pink-500 transition-colors">経歴</a>
-  <a href="#voice" class="hover:text-pink-500 transition-colors">ボイスサンプル</a>
-  <a href="#sns" class="hover:text-pink-500 transition-colors">SNS</a>
-  <a href="#contact" class="hover:text-pink-500 transition-colors">お問い合わせ</a>
-</div>
-      <!-- スマホ用ハンバーガーメニュー（今は簡易版） -->
-      <button id="menu-button" class="md:hidden text-3xl text-pink-400">
-        ☰
-      </button>
+  <nav class="bg-white/90 backdrop-blur-md border-b border-pink-100 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex justify-between items-center h-16">
+        <a href="#" class="text-2xl font-bold text-pink-500 hover:text-pink-600 transition-colors">
+          姫川あいり
+        </a>
+        <!-- PCメニュー -->
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+          <a href="#profile" class="hover:text-pink-500 transition-colors">プロフィール</a>
+          <a href="#career" class="hover:text-pink-500 transition-colors">経歴</a>
+          <a href="#voice" class="hover:text-pink-500 transition-colors">ボイスサンプル</a>
+          <a href="#sns" class="hover:text-pink-500 transition-colors">SNS</a>
+          <a href="#contact" class="hover:text-pink-500 transition-colors">お問い合わせ</a>
+        </div>
+        <!-- スマホハンバーガー -->
+        <button id="menu-button" class="md:hidden text-3xl text-pink-400">☰</button>
+      </div>
     </div>
-  </div>
-</nav>  
+  </nav>
+
+
 
 <!-- ヒーロー -->
-<section class="hero-bg min-h-screen flex items-center justify-center px-6 py-12">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-    
-    <!-- 左側：立ち絵 -->
-    <div class="flex justify-center">
-      <img src="assets/260325_背景透過.png" 
-           alt="姫川あいり" 
-           class="max-h-[85vh] w-auto drop-shadow-2xl">
-    </div>
-    
-    <!-- 右側：テキスト -->
-    <div class="text-center md:text-left">
-      <div class="mb-8">
-        <div class="inline-block bg-white/70 backdrop-blur-md px-6 py-2 rounded-full text-pink-500 text-sm font-medium mb-6">
-          電子の妖精
-        </div>
+  <section class="hero-bg min-h-screen flex items-center justify-center px-6 py-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="flex justify-center">
+        <img src="assets/260325_背景透過.png" alt="姫川あいり" class="max-h-[80vh] w-auto drop-shadow-2xl">
       </div>
-      <h1 class="text-5xl md:text-6xl font-bold text-pink-500 fairy-glow mb-6">姫川あいり公式サイト</h1>
-      <p class="text-2xl md:text-3xl text-pink-400 font-light mb-10">あなたを癒す電子の妖精、姫川あいりの公式サイトです</p>
-      
-      <a href="#contact" 
-         class="inline-block bg-pink-400 hover:bg-pink-500 text-white px-10 py-4 rounded-full text-lg font-medium transition-all shadow-lg">
-        お問い合わせはこちら
-      </a>
+      <div class="text-center md:text-left">
+        <h1 class="text-5xl md:text-6xl font-bold text-pink-500 mb-4">姫川あいり</h1>
+        <p class="text-2xl text-pink-400 font-light">あなたを癒す電子の妖精</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
   
-<!-- プロフィール -->
-<section id="profile" class="py-24 bg-white">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center text-pink-500 mb-12">Profile</h2>
-    
-    <div class="flex flex-col md:flex-row gap-12 items-center">
-      <!-- 立ち絵 -->
-      <div class="flex-shrink-0">
-        <img src="assets/260422_背景透過.png" 
-             alt="姫川あいり" 
-             class="w-80 md:w-96 rounded-3xl shadow-xl">
-      </div>
-      
-      <!-- テキスト -->
-      <div class="prose prose-lg text-gray-600 leading-relaxed">
-        <p>
-          新潟県出身のフリーランス女性声優、姫川あいりです。<br><br>
-          
-          ふわふわとした甘い声と、明るく癒しのある演技を得意としています。<br>
-          「あなたを癒す電子の妖精」として、皆さんの日常に優しく寄り添うようなお仕事をさせていただいています。
-        </p>
-      </div>
+  <!-- プロフィール -->
+  <section id="profile" class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-pink-500 mb-10">Profile</h2>
+      <p class="text-lg leading-relaxed text-gray-600">
+        新潟県出身のフリーランス女性声優、姫川あいりです。<br><br>
+        ふわふわとした甘い声と、明るく癒しのある演技を得意としています。<br>
+        「あなたを癒す電子の妖精」として、皆さんの日常に優しく寄り添うようなお仕事をさせていただいています。
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
 
 <!-- 経歴 -->
@@ -270,5 +233,6 @@
     © 2026 姫川あいり All Rights Reserved.
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
