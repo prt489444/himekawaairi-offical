@@ -86,3 +86,11 @@ section {
 .bg-white {
   background: #fffaf5;
 }
+
+/* ピンク地のセクションもヒーローと同じリッチ背景に */
+.bg-pink-50 {
+  background: linear-gradient(135deg, 
+    #fce7f3 0%, 
+    #f3e8ff 50%, 
+    #fae8e8 100%);
+}
